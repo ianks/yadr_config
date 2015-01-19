@@ -6,9 +6,12 @@ elif [[ $unamestr == 'Darwin' ]]; then
 fi
 
 if [[ $platform == 'darwin' ]]; then
+  export DOCKER_HOST=tcp://192.168.59.103:2376
+  export DOCKER_CERT_PATH=/Users/ianks/.boot2docker/certs/boot2docker-vm
+  export DOCKER_TLS_VERIFY=1
+fi
 
-elif [[ $platform == 'linux' ]]; then
-
+if [[ $platform == 'linux' ]]; then
   # sudo
   alias sudo='sudo'
   alias nsudo='nocorrect sudo'
@@ -44,6 +47,4 @@ alias rmdir='rmdirtrash'
 # Jruby
 export JRUBY_OPTS='--dev'
 
-replace(){
-  ag -l $1 | xargs perl -pi -E s/$1/$2/
-}
+alias cdd='cd $HOME/Dropbox/Development'
