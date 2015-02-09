@@ -1,17 +1,13 @@
 platform=$(uname)
-if [[ $unamestr == 'Linux' ]]; then
-  platform='linux'
-elif [[ $unamestr == 'Darwin' ]]; then
-  platform='darwin'
-fi
 
-if [[ $platform == 'darwin' ]]; then
+if [[ $platform == 'Darwin' ]]; then
   export DOCKER_HOST=tcp://192.168.59.103:2376
   export DOCKER_CERT_PATH=/Users/ianks/.boot2docker/certs/boot2docker-vm
   export DOCKER_TLS_VERIFY=1
+  export JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
-if [[ $platform == 'linux' ]]; then
+if [[ $platform == 'Linux' ]]; then
   # sudo
   alias sudo='sudo'
   alias nsudo='nocorrect sudo'
@@ -47,4 +43,8 @@ alias rmdir='rmdirtrash'
 # Jruby
 export JRUBY_OPTS='--dev'
 
+# Other
 alias cdd='cd $HOME/Dropbox/Development'
+
+# tmuxifier
+export PATH="$HOME/.tmuxifier/bin:$PATH"
