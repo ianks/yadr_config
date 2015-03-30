@@ -23,6 +23,10 @@ if [[ $platform == 'Linux' ]]; then
   export HOST='0.0.0.0'
 fi
 
+# # NVM
+# source $(brew --prefix nvm)/nvm.sh
+# export NVM_DIR=~/.nvm
+
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 if which pyenv > /dev/null; then
