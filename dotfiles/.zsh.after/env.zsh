@@ -12,9 +12,6 @@ if [[ $platform == 'Linux' ]]; then
   alias sudo='sudo'
   alias nsudo='nocorrect sudo'
 
-  # Echo urls instead of using browser
-  export BROWSER='echo'
-
   # Tmuxifier
   export PATH="$HOME/.tmuxifier/bin:$PATH"
   eval "$(tmuxifier init -)"
@@ -22,10 +19,6 @@ if [[ $platform == 'Linux' ]]; then
   # Host
   export HOST='0.0.0.0'
 fi
-
-# # NVM
-# source $(brew --prefix nvm)/nvm.sh
-# export NVM_DIR=~/.nvm
 
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"

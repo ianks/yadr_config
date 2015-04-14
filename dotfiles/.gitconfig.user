@@ -1,7 +1,7 @@
 [user]
   name = Ian Ker-Seymer
   email = i.kerseymer@gmail.com
-  signingkey = 3AAB4FF5
+  signingkey = 87DFBE93
 
 [commit]
   gpgsign = true
