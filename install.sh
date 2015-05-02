@@ -40,8 +40,6 @@ if [ ! -d "$HOME/.yadr_config" ]; then
       basename=$(basename $file)
       ln -sf $HOME/.yadr_config/dotfiles/$file $HOME/$basename
     done
-
-    $HOME/.yadr/bin/yadr/yadr-vim-add-plugin -u nanotech/jellybeans.vim
 else
     echo "YADR config is already installed"
 fi

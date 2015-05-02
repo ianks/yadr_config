@@ -33,10 +33,6 @@ if which nodenv > /dev/null; then
   eval "$(nodenv init -)"
 fi
 
-# rmtrash
-alias rm='rmtrash'
-alias rmdir='rmdirtrash'
-
 # Jruby
 export JRUBY_OPTS='--dev'
 
@@ -45,3 +41,5 @@ alias cdd='cd $HOME/Dropbox/Development'
 
 # tmuxifier
 export PATH="$HOME/.tmuxifier/bin:$PATH"
+
+[ "$TERM" = "xterm-termite" ] && eval $(dircolors $HOME/.dircolors)
