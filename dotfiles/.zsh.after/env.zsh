@@ -39,7 +39,4 @@ export JRUBY_OPTS='--dev'
 # Other
 alias cdd='cd $HOME/Dropbox/Development'
 
-# tmuxifier
-export PATH="$HOME/.tmuxifier/bin:$PATH"
-
 [ "$TERM" = "xterm-termite" ] && eval $(dircolors $HOME/.dircolors)
