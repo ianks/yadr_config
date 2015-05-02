@@ -12,10 +12,6 @@ if [[ $platform == 'Linux' ]]; then
   alias sudo='sudo'
   alias nsudo='nocorrect sudo'
 
-  # Tmuxifier
-  export PATH="$HOME/.tmuxifier/bin:$PATH"
-  eval "$(tmuxifier init -)"
-
   # Host
   export HOST='0.0.0.0'
 fi
