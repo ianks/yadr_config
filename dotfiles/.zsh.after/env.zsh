@@ -16,13 +16,6 @@ if [[ $platform == 'Linux' ]]; then
   export HOST='0.0.0.0'
 fi
 
-# pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
-if which pyenv > /dev/null; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  eval "$(pyenv init -)"
-fi
-
 # nodenv
 export PATH="$HOME/.nodenv/bin:$PATH"
 if which nodenv > /dev/null; then
@@ -36,3 +29,9 @@ export JRUBY_OPTS='--dev'
 alias cdd='cd $HOME/Dropbox/Development'
 
 [ "$TERM" = "xterm-termite" ] && eval $(dircolors $HOME/.dircolors)
+
+alias vim='nvim'
+
+if hash gdate 2>/dev/null; then
+  nvm use 0.10.38 > /dev/null
+fi
