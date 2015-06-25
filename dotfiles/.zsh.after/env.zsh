@@ -35,3 +35,5 @@ alias vim='nvim'
 if hash gdate 2>/dev/null; then
   nvm use 0.10.38 > /dev/null
 fi
+
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
