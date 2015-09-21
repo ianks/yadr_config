@@ -19,3 +19,6 @@
 
 [url "ssh://git@github.com/"]
   insteadOf = https://github.com/
+
+[url "ssh://ssh@bitbucket.org/"]
+  insteadOf = https://bitbucket.org/
