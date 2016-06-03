@@ -12,7 +12,7 @@ alias vim='nvim'
 
 # Tmuxifier
 export PATH="$HOME/.tmuxifier/bin:$PATH"
-source /usr/share/nvm/init-nvm.sh
+[ -f "/usr/share/nvm/init-nvm.sh" ] && source /usr/share/nvm/init-nvm.sh
 
 # FZF
 export FZF_DEFAULT_COMMAND='ag -g ""'
